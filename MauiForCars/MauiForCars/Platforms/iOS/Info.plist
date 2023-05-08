@@ -28,5 +28,41 @@
 	</array>
 	<key>XSAppIconAssets</key>
 	<string>Assets.xcassets/appicon.appiconset</string>
+	<key>CFBundleDisplayName</key>
+	<string>MauiForCars</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.companyname.mauiforcars</string>
+	<key>CFBundleVersion</key>
+	<string>1.0.0.1</string>
+	<key>CFBundleName</key>
+	<string>MauiForCars</string>
+	<key>UIApplicationSceneManifest</key>
+	<dict>
+		<key>UISceneConfigurations</key>
+		<dict>
+			<key>UIWindowSceneSessionRoleApplication</key>
+			<array>
+				<dict>
+					<key>UISceneClassName</key>
+					<string>UIWindowScene</string>
+					<key>UISceneConfigurationName</key>
+					<string>__MAUI_DEFAULT_SCENE_CONFIGURATION__</string>
+					<key>UISceneDelegateClassName</key>
+					<string>DeviceSceneDelegate</string>
+				</dict>
+			</array>
+			<key>CPTemplateApplicationSceneSessionRoleApplication</key>
+			<array>
+				<dict>
+					<key>UISceneClassName</key>
+					<string>CPTemplateApplicationScene</string>
+					<key>UISceneConfigurationName</key>
+					<string>MauiForCars-Car</string>
+					<key>UISceneDelegateClassName</key>
+					<string>CarPlaySceneDelegate</string>
+				</dict>
+			</array>
+		</dict>
+	</dict>
 </dict>
 </plist>
