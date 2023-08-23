@@ -27,7 +27,6 @@ namespace MauiCarAppDemo2.Platforms.iOS
             _poiTemplate = BuildPoiTemplate();
             _infoTemplate = BuildInfoTemplate();
             _tabBarTemplate = new CPTabBarTemplate(new CPTemplate[] { _gridTemplate, _listTemplate, _poiTemplate, _infoTemplate });
-
         }
 
         private CPGridTemplate BuildGridTemplate()

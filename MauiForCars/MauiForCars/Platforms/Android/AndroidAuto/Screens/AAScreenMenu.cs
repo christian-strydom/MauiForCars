@@ -2,11 +2,6 @@
 using AndroidX.Car.App.Model;
 using AndroidX.Core.Graphics.Drawable;
 using MauiForCars.Platforms.Android.AndroidAuto.Listeners;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Action = AndroidX.Car.App.Model.Action;
 
 namespace MauiForCars.Platforms.Android.AndroidAuto.Screens
