@@ -16,7 +16,7 @@ namespace MauiForCars.Platforms.Android.AndroidAuto.Listeners
 
         public void OnClick()
         {
-            CarToast.MakeText(_carContext, _message, CarToast.LengthShort).Show();
+            Device.BeginInvokeOnMainThread(() => { CarToast.MakeText(_carContext, _message, CarToast.LengthShort).Show(); });
         }
     }
 }

@@ -41,6 +41,9 @@ namespace MauiForCars.Platforms.Android.AndroidAuto.Listeners
                 case AAScreen.GridTemplate:
                     _screenManager.Push(new AAScreenGridTemplate(_carContext));
                     break;
+                case AAScreen.PlaceListMapTemplate:
+                    _screenManager.Push(new AAScreenPlaceListMapTemplate(_carContext));
+                    break;
                 case AAScreen.Pop:
                     _screenManager.Pop();
                     break;

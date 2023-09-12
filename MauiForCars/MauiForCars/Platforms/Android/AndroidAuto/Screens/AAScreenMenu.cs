@@ -40,11 +40,19 @@ namespace MauiForCars.Platforms.Android.AndroidAuto.Screens
                     .SetBrowsable(true)
                     .Build();
 
+                var placeListMapTemplateScreen = new Row.Builder()
+                    .SetTitle("Place List Map Template")
+                    .SetOnClickListener(new NavigationOnClickListener(CarContext, ScreenManager, Enums.AAScreen.PlaceListMapTemplate))
+                    .SetImage(dotnetBotCarIcon)
+                    .SetBrowsable(true)
+                    .Build();
+
                 var itemLsit = new ItemList.Builder()
                     .SetNoItemsMessage("Our MAUI app is running on Android Auto!")
                     .AddItem(messageTemplateScreen)
                     .AddItem(paneTemplateScreen)
                     .AddItem(gridTemplateScreen)
+                    .AddItem(placeListMapTemplateScreen)
                     .Build();
 
                 return new ListTemplate.Builder()

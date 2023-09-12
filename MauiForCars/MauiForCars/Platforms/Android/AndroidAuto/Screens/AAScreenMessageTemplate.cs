@@ -31,12 +31,12 @@ namespace MauiForCars.Platforms.Android.AndroidAuto.Screens
 
             var actionTwo = new Action.Builder()
                 .SetIcon(dotnetBotCarIcon)
-                .SetOnClickListener(new ActionOnClickListener(CarContext, "Accept was tapped"))
+                .SetOnClickListener(ParkedOnlyOnClickListener.Create(new RequestPermissionListener(CarContext, ScreenManager)))
                 .SetTitle("Accept")
                 .SetBackgroundColor(CarColor.Green)
                 .Build();
 
-            return new MessageTemplate.Builder("This is a message template!")
+            return new MessageTemplate.Builder("Please park your vehicle and accept the permissions on your phone to be able to use location services in the app")
                 .SetHeaderAction(Action.Back)
                 .SetTitle("MAUI Android Auto - Message Template")
                 .SetIcon(dotnetBotCarIcon)

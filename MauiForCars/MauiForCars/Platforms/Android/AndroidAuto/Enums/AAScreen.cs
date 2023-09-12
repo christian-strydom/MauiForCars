@@ -7,6 +7,7 @@
         MessageTemplate = 2,
         PaneTemplate = 3,
         GridTemplate = 4,
-        Pop = 5,
+        PlaceListMapTemplate = 5,
+        Pop = 6,
     }
 }
